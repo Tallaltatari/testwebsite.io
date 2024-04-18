@@ -1,0 +1,24 @@
+<html>
+<head>
+  <!-- Title of the HTML page -->
+  <title>Petrol Calculator</title> 
+  <!-- Link to external CSS stylesheet -->
+  <link rel="stylesheet" href="CH6_stylesheet.css">
+</head>
+<body>
+  <div class="calculator"><!-- Container for the petrol calculator -->
+    <h2>Petrol Calculator</h2> <!-- Heading for the calculator -->
+    <div class="input-group"> <!-- Container for input fields -->
+      <label for="petrol-cost">Cost of petrol per liter:</label> <!-- Label for petrol cost input -->
+      <input type="number" id="petrol-cost" step="0.01" value="1.72" required> <!-- Input field for petrol cost -->
+    </div>
+    <div class="input-group"> <!-- Container for input fields -->
+      <label for="liters-purchased">Number of liters purchased:</label> <!-- Label for liters purchased input -->
+      <input type="number" id="liters-purchased" step="0.01" value="0" required> <!-- Input field for liters purchased -->
+    </div>
+    <button id="calculate-btn">Calculate</button> <!-- Button to trigger calculation -->
+    <p id="total-cost"></p> <!-- Paragraph to display total cost -->
+  </div>
+  <script src="CH6_JS.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
